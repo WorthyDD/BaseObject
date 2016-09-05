@@ -22,5 +22,14 @@
 @property (nonatomic, assign) NSInteger fansCount;
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *location;
+@property (nonatomic) NSArray *courseArr;
+
+@end
+
+@interface Course : BaseObject
+@property (nonatomic, assign) NSInteger type;
+@property (nonatomic) NSString *date;
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *desc;
 
 @end

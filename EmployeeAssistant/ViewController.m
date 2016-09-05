@@ -7,10 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "APIManager.h"
 #import <MBProgressHUD.h>
-#import "CoachList.h"
-#import "GymList.h"
+#import "APIObjects.h"
+#import "KVNProgress.h"
 
 @interface ViewController ()
 
@@ -23,7 +22,7 @@
     
     UIButton *b = [[UIButton alloc]initWithFrame:CGRectMake(20, 20, 60, 30)];
     [b setTitle:@"test api" forState:UIControlStateNormal];
-    [b addTarget:self action:@selector(testAPI1:) forControlEvents:UIControlEventTouchUpInside];
+    [b addTarget:self action:@selector(testAPI2:) forControlEvents:UIControlEventTouchUpInside];
     [b setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:b];
     
@@ -69,6 +68,27 @@
         
     }];
 
+}
+
+- (void) testAPI2 : (id)sender{
+    
+    NSString *url = @"/gym/show_gyms_in_client";
+    NSDictionary *params = @{@"city" : @"北京",
+                             @"page" : @(1),
+                             @"perpage" : @(20)};
+    [KVNProgress show];
+    [[APIManager shareManager] GETWithAPIWithPath:url params:params completion:^(id jsonObject, NSError *error) {
+        
+        [KVNProgress dismiss];
+        if(error){
+            NSLog(@"error---%@", error);
+        }
+        if(jsonObject){
+            NSLog(@"jsonObject----%@", jsonObject);
+            GymList *list = [[GymList alloc]initWithJsonObject:jsonObject];
+            NSLog(@"gymlist:--%@", list);
+        }
+    }];
 }
 
 @end

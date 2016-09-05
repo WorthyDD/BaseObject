@@ -19,7 +19,6 @@
 // json array key - local element class
 + (NSDictionary *) arrayElementMap;
 
-- (void) printDesc;
 
 - (instancetype) initWithJsonObject : (NSDictionary *)jsonObject;
 

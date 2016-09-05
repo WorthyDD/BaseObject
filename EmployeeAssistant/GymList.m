@@ -41,8 +41,34 @@
         config = @{@"name" : @"name",
                    @"is_followed" : @"followed",
                    @"fans_count" : @"fansCount",
-                   @"location" : @"location"};
+                   @"location" : @"location",
+                   @"courses" : @"courseArr"};
     }
     return config;
 }
+
++ (NSDictionary *)arrayElementMap
+{
+    static NSDictionary *config;
+    if ( !config ){
+        config = @{@"courses" : @"Course"};
+    }
+    return config;
+}
+@end
+
+@implementation Course
+
++ (NSDictionary *)JSONMap
+{
+    static NSDictionary *config;
+    if ( !config ){
+        config = @{@"name" : @"name",
+                   @"desc" : @"desc",
+                   @"date" : @"date",
+                   @"course_type" : @"type"};
+    }
+    return config;
+}
+
 @end

@@ -37,7 +37,7 @@
             
             id value = [jsonObject objectForKey:key];
             NSString *localKey = [map objectForKey:key];
-            if(localKey == nil){
+            if(localKey == nil || !value){
                 continue;
             }
             
@@ -59,7 +59,7 @@
                     [self setValue:value forKey:localKey];
                 }
             }
-            else{
+            else if(value){
                 
                 //class
                 NSString *className = [classMap objectForKey:key];
@@ -73,32 +73,6 @@
                 }
             }
             
-            
-            /*
-             id localValue = [self valueForKey:localKey];
-             if([localValue isKindOfClass:[BaseObject class]]){
-             Class class = [localValue class];
-             id obj = [[class alloc]initWithJsonObject:value];
-             [self setValue:obj forKey:localKey];
-             }
-             else if([localValue isKindOfClass:[NSArray class]]){
-             if(![value isKindOfClass:[NSArray class]]){
-             continue;
-             }
-             NSMutableArray *arr = [NSMutableArray new];
-             id className = [[[self class] arrayElementMap] objectForKey:key];
-             if(className != nil){
-             Class class = NSClassFromString(className);
-             for(id elementValue in value){
-             id elementObj = [[class alloc]initWithJsonObject:elementValue];
-             [arr addObject:elementObj];
-             }
-             }
-             [self setValue:arr forKey:localKey];
-             }
-             else{
-             [self setValue:value forKey:localKey];
-             }*/
         }
 
     }

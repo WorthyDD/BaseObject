@@ -14,16 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - KVNProgress (2.3)
   - MBProgressHUD (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - KVNProgress
   - MBProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  KVNProgress: d0459bfa4dca0379cdba5c038326ea34e9fc2df9
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
-PODFILE CHECKSUM: ec87b8cb65328a42a5a45942627577bb544adb45
+PODFILE CHECKSUM: 7e29553e8117ddedf8713602df6aa91d604c2c6b
 
 COCOAPODS: 1.0.0

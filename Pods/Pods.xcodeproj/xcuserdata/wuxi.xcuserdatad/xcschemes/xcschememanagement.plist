@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KVNProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>806D3E04C270FF8759DA04A262EA7744</key>
+		<key>06B2232CE73059846F04E5C3DFEE0D38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51CA5C35CD4E8152E8CB2C6FA08D6774</key>
 		<dict>
 			<key>primary</key>
 			<true/>
