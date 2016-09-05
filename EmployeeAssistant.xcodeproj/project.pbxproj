@@ -13,6 +13,9 @@
 		CC56C9DB1D7D517900CE097C /* UIColor+TAToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC56C9DA1D7D517900CE097C /* UIColor+TAToolkit.m */; };
 		CC56C9DF1D7D51BC00CE097C /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = CC56C9DE1D7D51BC00CE097C /* UIView+Geometry.m */; };
 		CC56C9EA1D7D53B300CE097C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC56C9E91D7D53B300CE097C /* BaseViewController.m */; };
+		CC56C9EE1D7D5B6F00CE097C /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC56C9ED1D7D5B6F00CE097C /* CacheManager.m */; };
+		CC56C9F11D7D5D4200CE097C /* BaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CC56C9F01D7D5D4200CE097C /* BaseNavigationBar.m */; };
+		CC56C9F41D7D5E9F00CE097C /* UIView+IBInspect.m in Sources */ = {isa = PBXBuildFile; fileRef = CC56C9F31D7D5E9F00CE097C /* UIView+IBInspect.m */; };
 		CC80ACA41D6FDABE004A8466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80ACA31D6FDABE004A8466 /* main.m */; };
 		CC80ACA71D6FDABE004A8466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80ACA61D6FDABE004A8466 /* AppDelegate.m */; };
 		CC80ACAA1D6FDABE004A8466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80ACA91D6FDABE004A8466 /* ViewController.m */; };
@@ -60,6 +63,12 @@
 		CC56C9E81D7D53B300CE097C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		CC56C9E91D7D53B300CE097C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		CC56C9EB1D7D53CA00CE097C /* constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
+		CC56C9EC1D7D5B6F00CE097C /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
+		CC56C9ED1D7D5B6F00CE097C /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
+		CC56C9EF1D7D5D4200CE097C /* BaseNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationBar.h; sourceTree = "<group>"; };
+		CC56C9F01D7D5D4200CE097C /* BaseNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationBar.m; sourceTree = "<group>"; };
+		CC56C9F21D7D5E9F00CE097C /* UIView+IBInspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBInspect.h"; sourceTree = "<group>"; };
+		CC56C9F31D7D5E9F00CE097C /* UIView+IBInspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBInspect.m"; sourceTree = "<group>"; };
 		CC80AC9F1D6FDABE004A8466 /* EmployeeAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC80ACA31D6FDABE004A8466 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC80ACA51D6FDABE004A8466 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +148,8 @@
 				CC56C9DA1D7D517900CE097C /* UIColor+TAToolkit.m */,
 				CC56C9DD1D7D51BC00CE097C /* UIView+Geometry.h */,
 				CC56C9DE1D7D51BC00CE097C /* UIView+Geometry.m */,
+				CC56C9F21D7D5E9F00CE097C /* UIView+IBInspect.h */,
+				CC56C9F31D7D5E9F00CE097C /* UIView+IBInspect.m */,
 			);
 			name = Toolkit;
 			sourceTree = "<group>";
@@ -148,6 +159,8 @@
 			children = (
 				CC56C9E81D7D53B300CE097C /* BaseViewController.h */,
 				CC56C9E91D7D53B300CE097C /* BaseViewController.m */,
+				CC56C9EF1D7D5D4200CE097C /* BaseNavigationBar.h */,
+				CC56C9F01D7D5D4200CE097C /* BaseNavigationBar.m */,
 			);
 			name = BaseUI;
 			sourceTree = "<group>";
@@ -238,6 +251,8 @@
 		CC92ED3A1D754D3E00D4ECFB /* APIHelper */ = {
 			isa = PBXGroup;
 			children = (
+				CC56C9EC1D7D5B6F00CE097C /* CacheManager.h */,
+				CC56C9ED1D7D5B6F00CE097C /* CacheManager.m */,
 				CC56C9D31D7D3A7100CE097C /* MineType.h */,
 				CC56C9D41D7D3A7100CE097C /* MineType.m */,
 				CC56C9D51D7D3A7100CE097C /* mineType.txt */,
@@ -433,12 +448,15 @@
 				CC56C9D61D7D3A7100CE097C /* MineType.m in Sources */,
 				CC80ACAA1D6FDABE004A8466 /* ViewController.m in Sources */,
 				CC92ED391D751F6A00D4ECFB /* BaseObject.m in Sources */,
+				CC56C9F41D7D5E9F00CE097C /* UIView+IBInspect.m in Sources */,
+				CC56C9EE1D7D5B6F00CE097C /* CacheManager.m in Sources */,
 				CC56C9DB1D7D517900CE097C /* UIColor+TAToolkit.m in Sources */,
 				CC80ACA71D6FDABE004A8466 /* AppDelegate.m in Sources */,
 				CC80ACA41D6FDABE004A8466 /* main.m in Sources */,
 				CC92ED401D755BB200D4ECFB /* CoachList.m in Sources */,
 				CC92ED3D1D754DFF00D4ECFB /* APIManager.m in Sources */,
 				CC56C9EA1D7D53B300CE097C /* BaseViewController.m in Sources */,
+				CC56C9F11D7D5D4200CE097C /* BaseNavigationBar.m in Sources */,
 				CC92ED431D7574F200D4ECFB /* GymList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

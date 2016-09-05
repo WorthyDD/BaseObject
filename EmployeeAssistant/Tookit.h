@@ -12,5 +12,6 @@
 #import "CGGeometry+TAUIToolkit.h"
 #import "UIColor+TAToolkit.h"
 #import "UIView+Geometry.h"
+#import "UIView+IBInspect.h"
 
 #endif /* Tookit_h */

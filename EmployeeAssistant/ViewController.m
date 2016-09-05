@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *b = [[UIButton alloc]initWithFrame:CGRectMake(20, 20, 60, 30)];
+    UIButton *b = [[UIButton alloc]initWithFrame:CGRectMake(20, 80, 60, 30)];
     [b setTitle:@"test api" forState:UIControlStateNormal];
     [b addTarget:self action:@selector(testAPI2:) forControlEvents:UIControlEventTouchUpInside];
     [b setBackgroundColor:[UIColor redColor]];
@@ -76,6 +76,8 @@
     NSDictionary *params = @{@"city" : @"北京",
                              @"page" : @(1),
                              @"perpage" : @(20)};
+    
+    __weak typeof(self) WeakSelf = self;
     [KVNProgress show];
     [[APIManager shareManager] GETWithAPIWithPath:url params:params completion:^(id jsonObject, NSError *error) {
         
@@ -87,6 +89,10 @@
             NSLog(@"jsonObject----%@", jsonObject);
             GymList *list = [[GymList alloc]initWithJsonObject:jsonObject];
             NSLog(@"gymlist:--%@", list);
+            
+            BaseViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"testVC"];
+            [WeakSelf.navigationController pushViewController:vc animated:YES];
+            
         }
     }];
 }
