@@ -15,12 +15,13 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    [self setBarTintColor:THEME_COLOR];
-    [self setTranslucent:NO];
-    [self setTintColor:[UIColor whiteColor]];
-    [self setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+//    [self setBarTintColor:THEME_COLOR];
+//    [self setTranslucent:NO];
+    [self setTintColor:[UIColor colorWithRGB:0x666666]];
+//    [self setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
 
+/*
 - (instancetype)init
 {
     self = [super init];
@@ -48,5 +49,7 @@
     }
     return self;
 }
+*/
+
 
 @end

@@ -28,6 +28,9 @@
 		CC92ED3D1D754DFF00D4ECFB /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC92ED3C1D754DFF00D4ECFB /* APIManager.m */; };
 		CC92ED401D755BB200D4ECFB /* CoachList.m in Sources */ = {isa = PBXBuildFile; fileRef = CC92ED3F1D755BB200D4ECFB /* CoachList.m */; };
 		CC92ED431D7574F200D4ECFB /* GymList.m in Sources */ = {isa = PBXBuildFile; fileRef = CC92ED421D7574F200D4ECFB /* GymList.m */; };
+		CCEDF6B91D82833100BCB346 /* MainPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEDF6B81D82833100BCB346 /* MainPageController.m */; };
+		CCEDF6BC1D8286A600BCB346 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEDF6BB1D8286A600BCB346 /* BannerView.m */; };
+		CCEDF6BF1D829E9B00BCB346 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEDF6BE1D829E9B00BCB346 /* BaseWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,12 @@
 		CC92ED3F1D755BB200D4ECFB /* CoachList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoachList.m; sourceTree = "<group>"; };
 		CC92ED411D7574F200D4ECFB /* GymList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymList.h; sourceTree = "<group>"; };
 		CC92ED421D7574F200D4ECFB /* GymList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymList.m; sourceTree = "<group>"; };
+		CCEDF6B71D82833100BCB346 /* MainPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageController.h; sourceTree = "<group>"; };
+		CCEDF6B81D82833100BCB346 /* MainPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageController.m; sourceTree = "<group>"; };
+		CCEDF6BA1D8286A600BCB346 /* BannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerView.h; sourceTree = "<group>"; };
+		CCEDF6BB1D8286A600BCB346 /* BannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerView.m; sourceTree = "<group>"; };
+		CCEDF6BD1D829E9B00BCB346 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		CCEDF6BE1D829E9B00BCB346 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
 		D4053669CB11735D7858E19E /* libPods-EmployeeAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmployeeAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,6 +159,8 @@
 				CC56C9DE1D7D51BC00CE097C /* UIView+Geometry.m */,
 				CC56C9F21D7D5E9F00CE097C /* UIView+IBInspect.h */,
 				CC56C9F31D7D5E9F00CE097C /* UIView+IBInspect.m */,
+				CCEDF6BA1D8286A600BCB346 /* BannerView.h */,
+				CCEDF6BB1D8286A600BCB346 /* BannerView.m */,
 			);
 			name = Toolkit;
 			sourceTree = "<group>";
@@ -161,6 +172,8 @@
 				CC56C9E91D7D53B300CE097C /* BaseViewController.m */,
 				CC56C9EF1D7D5D4200CE097C /* BaseNavigationBar.h */,
 				CC56C9F01D7D5D4200CE097C /* BaseNavigationBar.m */,
+				CCEDF6BD1D829E9B00BCB346 /* BaseWebViewController.h */,
+				CCEDF6BE1D829E9B00BCB346 /* BaseWebViewController.m */,
 			);
 			name = BaseUI;
 			sourceTree = "<group>";
@@ -196,6 +209,8 @@
 				CC92ED361D751F5000D4ECFB /* Model */,
 				CC80ACA81D6FDABE004A8466 /* ViewController.h */,
 				CC80ACA91D6FDABE004A8466 /* ViewController.m */,
+				CCEDF6B71D82833100BCB346 /* MainPageController.h */,
+				CCEDF6B81D82833100BCB346 /* MainPageController.m */,
 				CC80ACA21D6FDABE004A8466 /* Supporting Files */,
 			);
 			path = EmployeeAssistant;
@@ -449,12 +464,15 @@
 				CC80ACAA1D6FDABE004A8466 /* ViewController.m in Sources */,
 				CC92ED391D751F6A00D4ECFB /* BaseObject.m in Sources */,
 				CC56C9F41D7D5E9F00CE097C /* UIView+IBInspect.m in Sources */,
+				CCEDF6B91D82833100BCB346 /* MainPageController.m in Sources */,
 				CC56C9EE1D7D5B6F00CE097C /* CacheManager.m in Sources */,
 				CC56C9DB1D7D517900CE097C /* UIColor+TAToolkit.m in Sources */,
+				CCEDF6BC1D8286A600BCB346 /* BannerView.m in Sources */,
 				CC80ACA71D6FDABE004A8466 /* AppDelegate.m in Sources */,
 				CC80ACA41D6FDABE004A8466 /* main.m in Sources */,
 				CC92ED401D755BB200D4ECFB /* CoachList.m in Sources */,
 				CC92ED3D1D754DFF00D4ECFB /* APIManager.m in Sources */,
+				CCEDF6BF1D829E9B00BCB346 /* BaseWebViewController.m in Sources */,
 				CC56C9EA1D7D53B300CE097C /* BaseViewController.m in Sources */,
 				CC56C9F11D7D5D4200CE097C /* BaseNavigationBar.m in Sources */,
 				CC92ED431D7574F200D4ECFB /* GymList.m in Sources */,

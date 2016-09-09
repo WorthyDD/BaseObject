@@ -47,7 +47,6 @@ NSString *const kAPIRequestOperationManagerErrorInfoServerDataKey = @"serverData
 }
 
 - (NSURLSessionDataTask *) GETWithAPIWithPath : (NSString *)apiPath params : (NSDictionary *)params completion : (void(^)(id jsonObject, NSError *error))completion{
-    
     NSURLSessionDataTask *task = nil;
     if(self.isOffline) {
         NSString *msg = @"网络故障或服务器故障";

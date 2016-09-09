@@ -26,7 +26,33 @@
     [b setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:b];
     
+    [self testUploadPhoto];
 }
+
+//上传图片测试
+- (void) testUploadPhoto
+{
+    UIImage *image = [UIImage imageNamed:@"unknown.jpg"];
+    NSData *data = UIImageJPEGRepresentation(image, 1.0);
+    NSString *url = @"http://192.168.30.29:5000/upload";
+    APIUploadFile *upload = [[APIUploadFile alloc]initWithName:@"file" fileName:@"unkoen.jpg" data:data mineType:@"image"];
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]init];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager.responseSerializer.acceptableContentTypes setByAddingObjectsFromArray:@[@"text/html", @"text/plain", @"image/jpeg", @"image/jpg"]];
+    [manager POST:url parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [formData appendPartWithFileData:data name:upload.name fileName:upload.fileName mimeType:upload.mineType];
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        NSInteger percentage = uploadProgress.completedUnitCount/((double)uploadProgress.totalUnitCount)*100;
+        NSLog(@"\n上传中... %%%ld", percentage);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NSLog(@"\ncomplete----%@", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"\n error---%@", error);
+    }];
+    
+}
+
 
 - (void)testAPI : (id)sender{
     
